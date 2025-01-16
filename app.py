@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import tensorflow as tf
 import numpy as np
-import cv2
+import opencv as cv2
 import json
 from tensorflow.keras.models import model_from_json
 
@@ -69,7 +69,7 @@ def segment(img):
 #===========================================================================
 
 # Set title of the app
-st.title("Image Upload and Plant Prediction")
+st.title("Plant Seedlings Classification")
 
 # Image uploader widget
 uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
